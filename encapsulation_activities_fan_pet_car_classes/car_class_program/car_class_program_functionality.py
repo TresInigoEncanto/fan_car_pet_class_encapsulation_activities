@@ -11,4 +11,4 @@ class Car:
         self.__speed -= 5
 
     def get_speed(self):
-        return self.__speed 
+        return self.__speed
