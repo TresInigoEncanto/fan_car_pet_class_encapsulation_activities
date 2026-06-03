@@ -10,6 +10,7 @@ def main():
         print(f"Current speed after accelerate call {i+1}: {my_car.get_speed()}")
     
     print("\n--- Brake ---")
+    
     for i in range(5):
         my_car.brake()
         print(f"Current speed after brake call {i+1}: {my_car.get_speed()}")
