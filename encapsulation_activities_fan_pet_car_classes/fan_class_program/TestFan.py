@@ -20,9 +20,14 @@ def TestFan():
 
     workout_sync = Fan()
 
-    
+    workout_sync.runners_pace(minutes = 7, seconds = 0)
+    print(f"Fan Speed Set To: {workout_sync.get_speed()}")
 
-    
+    workout_sync.runners_pace(minutes = 6, seconds = 30)
+    print(f"Fan Speed Set To: {workout_sync.get_speed()}")
+
+    workout_sync.runners_pace(minutes = 4, seconds = 30)
+    print(f"Fan Speed Set To: {workout_sync.get_speed()}")
 
 if __name__ == "__main__":
     TestFan()
