@@ -25,5 +25,9 @@ def main():
 
     print(f"Runner's Target Pace: {run_minutes}:{run_seconds:02d}/km")
 
+    if total_pace <= 5.0:
+        print("High Intensity Pace")
+        target_speed = 25
+
 if __name__ == "__main__":
     main()
