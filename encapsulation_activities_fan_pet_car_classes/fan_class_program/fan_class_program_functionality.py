@@ -46,3 +46,12 @@ class Fan:
 
         if total_pace <= 5.0:
             self.set_speed(Fan.FAST)
+            print(f"[Workout] High Intensity Pace: {minutes}:{seconds:02d}/km")
+
+        elif total_pace <= 6.5:
+            self.set_speed(Fan.MEDIUM)
+            print(f"[Workout] Moderate Tempo Pace: {minutes}:{seconds:02d}/km")
+        
+        else:
+            self.set_speed(Fan.SLOW)
+            print(f"[Workout] Easy Recovery Pace: {minutes}:{seconds:02d}/km")
