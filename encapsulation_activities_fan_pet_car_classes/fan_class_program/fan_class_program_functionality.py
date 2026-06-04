@@ -39,3 +39,7 @@ class Fan:
         Adjusts fan speed based on the runner's pace.
         Faster running pace = stronger fan winds
         """
+
+        total_pace = minutes + (seconds / 60.0)
+
+        self.set_on(True)
