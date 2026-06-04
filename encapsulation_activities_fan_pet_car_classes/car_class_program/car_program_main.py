@@ -42,5 +42,13 @@ def main():
     while my_car.get_speed() != target_speed:
         current = my_car.get_speed()
 
+        if current < target_speed:
+            my_car.accelerate()
+        
+        elif current > target_speed:
+            my_car.brake()
+
+    
+
 if __name__ == "__main__":
     main()
