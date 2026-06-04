@@ -37,7 +37,7 @@ def main():
         print("Easy Recovery Pace")
         target_speed = 5
     
-    print(f"Pace car cruising to match runner's pace. Target speed; {target_speed} km/h")
+    print(f"Pace car cruising to match runner's pace. Target speed: {target_speed} km/h")
 
     while my_car.get_speed() != target_speed:
         current = my_car.get_speed()
@@ -48,7 +48,7 @@ def main():
         elif current > target_speed:
             my_car.brake()
 
-    
+    print(f"\nPace Car Cruising To Target Speed. Leading Runner At {my_car.get_speed()} km/h")
 
 if __name__ == "__main__":
     main()
