@@ -30,5 +30,7 @@ def main():
     else:
         multiplier = 0.10
 
+    distance_covered = run_minutes * multiplier
+
 if __name__ == "__main__":
     main()
