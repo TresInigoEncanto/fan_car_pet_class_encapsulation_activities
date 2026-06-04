@@ -33,3 +33,9 @@ class Fan:
     
     def get_color(self):
         return self.__color
+
+    def runners_pace(self, minutes, seconds):
+        """
+        Adjusts fan speed based on the runner's pace.
+        Faster running pace = stronger fan winds
+        """
