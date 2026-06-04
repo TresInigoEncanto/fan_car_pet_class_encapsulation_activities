@@ -39,5 +39,8 @@ def main():
     
     print(f"Pace car cruising to match runner's pace. Target speed; {target_speed} km/h")
 
+    while my_car.get_speed() != target_speed:
+        current = my_car.get_speed()
+
 if __name__ == "__main__":
     main()
