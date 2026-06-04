@@ -12,25 +12,26 @@ def main():
     print("Your pet is a", my_pet.get_animal_type())
     print("Your pet is", my_pet.get_age(), "old")
 
-    print("\n--- Jogging With Your Pets Feature ---")
+    print("\n--- Outdoor Stroll With Your Pets Feature ---")
 
     run_minutes = int(input("How many minutes did you run with your pet? "))
 
     pet_type = my_pet.get_animal_type().lower()
 
     if "dog" in pet_type:
-        multiplier = 0.25
-
-    elif "cat" in pet_type:
         multiplier = 0.15
 
-    elif "bird" in pet_type:
-        multiplier = 0.40
+    elif "cat" in pet_type:
+        multiplier = 0.5
     
     else:
         multiplier = 0.10
 
     distance_covered = run_minutes * multiplier
+
+    print(f"\nWorkout Complete")
+    print(f"Because {my_pet.get_name()} is a {my_pet.get_animal_type()}, your walk/run had a great pace!")
+    print(f"Approximate distance covered of your run/walk: {distance_covered:.2f} km, good job!")
 
 if __name__ == "__main__":
     main()
