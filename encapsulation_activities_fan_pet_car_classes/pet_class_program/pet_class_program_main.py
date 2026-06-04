@@ -12,5 +12,11 @@ def main():
     print("Your pet is a", my_pet.get_animal_type())
     print("Your pet is", my_pet.get_age(), "old")
 
+    print("\n--- Jogging With Your Pets Feature ---")
+
+    run_minutes = int(input("How many minutes did you run with your pet? "))
+
+    
+
 if __name__ == "__main__":
     main()
