@@ -16,7 +16,7 @@ def main():
 
     run_minutes = int(input("How many minutes did you run with your pet? "))
 
-    
+    pet_type = my_pet.get_animal_type().lower()
 
 if __name__ == "__main__":
     main()
