@@ -18,5 +18,17 @@ def main():
 
     pet_type = my_pet.get_animal_type().lower()
 
+    if "dog" in pet_type:
+        multiplier = 0.25
+
+    elif "cat" in pet_type:
+        multiplier = 0.15
+
+    elif "bird" in pet_type:
+        multiplier = 0.40
+    
+    else:
+        multiplier = 0.10
+
 if __name__ == "__main__":
     main()
