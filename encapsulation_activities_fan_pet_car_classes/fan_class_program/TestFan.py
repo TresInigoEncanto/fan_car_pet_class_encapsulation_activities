@@ -16,5 +16,13 @@ def TestFan():
     print(f"color: {fan2.get_color()}")
     print(f"on: {fan2.get_on()}")
 
+    print("\n--- Running Sync Feature (Test) ---")
+
+    workout_sync = Fan()
+
+    
+
+    
+
 if __name__ == "__main__":
     TestFan()
