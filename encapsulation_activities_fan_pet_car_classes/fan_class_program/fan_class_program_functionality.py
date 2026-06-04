@@ -43,3 +43,6 @@ class Fan:
         total_pace = minutes + (seconds / 60.0)
 
         self.set_on(True)
+
+        if total_pace <= 5.0:
+            self.set_speed(Fan.FAST)
