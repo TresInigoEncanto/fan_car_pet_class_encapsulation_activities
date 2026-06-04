@@ -29,5 +29,15 @@ def main():
         print("High Intensity Pace")
         target_speed = 25
 
+    elif total_pace <= 6.5:
+        print("Moderate Tempo Pace")
+        target_speed = 15
+    
+    else:
+        print("Easy Recovery Pace")
+        target_speed = 5
+    
+    print(f"Pace car cruising to match runner's pace. Target speed; {target_speed} km/h")
+
 if __name__ == "__main__":
     main()
