@@ -15,5 +15,11 @@ def main():
         my_car.brake()
         print(f"Current speed after brake call {i+1}: {my_car.get_speed()}")
 
+    print("\n--- Pace Car Cruise Control ---")
+
+    run_minutes = int(input("Enter target pace minutes per kilometer = ")) 
+    
+    run_seconds = int(input("Enter target pace seconds per kilometer = "))
+
 if __name__ == "__main__":
     main()
