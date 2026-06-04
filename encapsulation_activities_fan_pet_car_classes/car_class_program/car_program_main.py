@@ -21,5 +21,9 @@ def main():
     
     run_seconds = int(input("Enter target pace seconds per kilometer = "))
 
+    total_pace = run_minutes + (run_seconds / 60.0)
+
+    print(f"Runner's Target Pace: {run_minutes}:{run_seconds:02d}/km")
+
 if __name__ == "__main__":
     main()
